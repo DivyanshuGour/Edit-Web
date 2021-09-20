@@ -1,0 +1,191 @@
+.hmwc {
+  cursor: pointer;
+  border: solid;
+  border-color: #3e69dc;
+}
+
+.ht {
+  display: none;
+}
+
+.hmwb {
+  filter: blur(8px);
+}
+
+#btnhide {
+  top: 89%;
+  left: 33%;
+  height: 30px;
+  width: 30px;
+  color: white;
+  position: fixed !important;
+  display: block !important;
+  pointer-events: auto !important;
+  z-index: 1000000;
+}
+
+#btnblur {
+  top: 89%;
+  left: 38%;
+  height: 30px;
+  width: 30px;
+  color: white;
+  position: fixed !important;
+  display: block !important;
+  pointer-events: auto !important;
+  z-index: 1000000;
+}
+
+#btndrag {
+  top: 89%;
+  left: 43%;
+  height: 30px;
+  width: 30px;
+  color: white;
+  position: fixed !important;
+  display: block !important;
+  pointer-events: auto !important;
+  z-index: 1000000;
+}
+
+#btnresize {
+  top: 89%;
+  left: 48%;
+  height: 30px;
+  width: 30px;
+  color: white;
+  position: fixed !important;
+  display: block !important;
+  pointer-events: auto !important;
+  z-index: 1000000;
+}
+
+#colorpicker {
+  position: fixed !important;
+  display: block !important;
+  pointer-events: auto !important;
+  top: 89%;
+  left: 53%;
+  width: 27px;
+  height: 30px;
+  z-index: 1000000;
+}
+
+#btnhighlight {
+  top: 89%;
+  left: 58%;
+  height: 30px;
+  width: 30px;
+  color: white;
+  position: fixed !important;
+  display: block !important;
+  pointer-events: auto !important;
+  z-index: 1000000;
+}
+
+#btntitle {
+  top: 89%;
+  left: 63%;
+  height: 30px;
+  width: 30px;
+  color: white;
+  position: fixed !important;
+  display: block !important;
+  pointer-events: auto !important;
+  z-index: 1000000;
+}
+
+#btndone {
+  top: 89%;
+  left: 68%;
+  height: 30px;
+  width: 30px;
+  color: white;
+  position: fixed !important;
+  display: block !important;
+  pointer-events: auto !important;
+  z-index: 1000000;
+}
+
+#btnhide:hover {
+  color: #3e69dc;
+}
+#btnblur:hover {
+  color: #3e69dc;
+}
+#btnmarker:hover {
+  color: #3e69dc;
+}
+#btnhighlight:hover {
+  color: #3e69dc;
+}
+#btntitle:hover {
+  color: #3e69dc;
+}
+#btndone:hover {
+  color: #3e69dc;
+}
+
+#customToolbar {
+  z-index: 900000;
+  filter: blur(0px) !important;
+  display: block !important;
+  position: fixed !important;
+  pointer-events: auto !important;
+  top: 87%;
+  left: 30%;
+  width: 43%;
+  height: 55px;
+  border-radius: 30px;
+  border: 0px;
+  background: #181818 !important;
+}
+
+#msg {
+  position: fixed !important; /* Stay in place */
+  z-index: 100000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+#msg-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #888;
+  max-height: 50%;
+  max-width: 40%;
+  background: #181818 !important;
+}
+
+#keyinput {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: 15px;
+  margin-bottom: 12px;
+  width: 100%; /* Could be more or less, depending on screen size */
+}
+
+#close {
+  position: absolute;
+  max-height: 5%;
+  max-width: 5%;
+  background-color: red;
+  color: white;
+}
+
+#myCanvas {
+  position: absolute !important;
+  top: 0px !important;
+  left: 0px !important;
+  margin: 0%;
+  cursor: progress;
+  z-index: 800000 !important;
+  pointer-events: auto !important;
+}
