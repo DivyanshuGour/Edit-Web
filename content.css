@@ -8,6 +8,11 @@
   filter: blur(8px);
 }
 
+.hmwr {
+  resize: both;
+  overflow: scroll;
+}
+
 .hmwd {
   position: relative;
 }

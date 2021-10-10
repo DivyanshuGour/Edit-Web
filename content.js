@@ -64,11 +64,11 @@ $("div, p, h1, h2, h3, h4, h5, h6, img, button, a").on({
 });
 
 $("div, p, h1, h2, h3, h4, h5, h6, img, button, a").on('click', function (e) {
-    if (mode == 1) {                 //Hide
+    if (mode == 1) {                  //Hide
         e.preventDefault();
         $(this).hide();
     }
-    if (mode == 2) {                 // Blur
+    if (mode == 2) {                  // Blur
         if ($(this).attr('data-click-state') == 0) {
             e.preventDefault();
             $(this).attr('data-click-state', 1);
@@ -81,12 +81,13 @@ $("div, p, h1, h2, h3, h4, h5, h6, img, button, a").on('click', function (e) {
             $(this).addClass('hmwb');
         }
     }
-    if (mode == 3) {              // Drag
+    if (mode == 3) {                   // Drag
+        e.preventDefault();       
         dragElement($(this).get(0));
         console.log($(this).get(0))
         function dragElement(elmnt) {
             var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-            elmnt.style['position'] = 'absolute';
+            elmnt.style['position'] = 'relative';
             elmnt.onmousedown = dragMouseDown;
 
             function dragMouseDown(e) {
@@ -115,13 +116,16 @@ $("div, p, h1, h2, h3, h4, h5, h6, img, button, a").on('click', function (e) {
 
             function closeDragElement() {
                 // stop moving when mouse button is released:
-               // elmnt.style['position'] = 'default';
+                elmnt.style['position'] = 'relative';
                 document.onmouseup = null;
                 document.onmousemove = null;
             }
         }
     }
     if (mode == 4) {                  // Resize
+        e.preventDefault();
+        $(this).attr('data-click-state', 0);
+        $(this).addClass('hmwr');
     }
     if (mode == 5) {                  // Highlight
         var color = document.getElementById("colorpicker").value;
